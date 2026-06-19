@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-item lines="none">
+      <ion-label>
+        location
+
+        <p>
+          <ion-icon name="location"></ion-icon>
+
+          <ion-text>Lahore</ion-text>
+
+          <ion-button fill="clear" color="light">
+            <ion-icon slot="icon-only" name="chevron-down-outline"> </ion-icon>
+          </ion-button>
+        </p>
+      </ion-label>
+
+      <ion-button slot="end">
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+
+      <ion-button slot="end" class="notification">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="10">
+        <ion-searchbar
+          class="srchBar"
+          debounce="800"
+          color="light"
+          #searchInput
+          inputmode="search"
+          type="search"
+          class="srchBar"
+          mode="ios"
+          placeholder="Search"
+          routerLink="/tab/search"
+        >
+        </ion-searchbar>
+      </ion-col>
+
+      <ion-col size="2">
+        <ion-button class="filter-btn" color="light">
+          <ion-icon slot="icon-only" name="options" color="primary"> </ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conatainer ml-4 mr-4">
+    <app-list-heading heading="Featured Products"></app-list-heading>
+    <app-banner></app-banner>
+
+    @if(categories().length > 0){
+    <app-list-heading heading="Categories"></app-list-heading>
+    <app-category [categories]="categories()"></app-category>
+    }@if(products().length > 0) {
+
+    <app-list-heading heading="Featured Products"></app-list-heading>
+    <app-product-list-horizontal
+      [products]="products()"
+    ></app-product-list-horizontal>
+
+    }
+  </div>
+</ion-content>

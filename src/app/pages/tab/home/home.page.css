@@ -1,0 +1,145 @@
+/* src/app/pages/tab/home/home.page.css */
+
+/* Header */
+ion-header ion-toolbar {
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 10px;
+}
+
+ion-header ion-item {
+  --background: transparent;
+}
+
+ion-header ion-label {
+  font-size: var(--font-size-lg);
+  color: lightgray;
+}
+
+ion-header ion-label p {
+  color: white;
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+ion-header ion-label p ion-text {
+  padding-left: 5px;
+}
+
+ion-header ion-label p ion-icon {
+  font-size: var(--icon-sm);
+}
+
+ion-header ion-label p ion-button {
+  margin-left: 2px;
+  --padding-start: 0;
+  --padding-end: 0;
+  height: 24px;
+}
+
+ion-header ion-item ion-button {
+  --background: rgba(255, 255, 255, 0.2);
+  --border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-header ion-item ion-button ion-icon {
+  font-size: var(--icon-md);
+  padding: 5px 0;
+}
+
+.notification {
+  margin-inline-start: 8px;
+}
+
+ion-header ion-row {
+  margin: 10px;
+  align-items: center;
+}
+
+ion-header ion-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Searchbar */
+.srchBar {
+  width: 100%;
+  padding: 0;
+  height: 20px;
+  --background: #ffffff;
+  --border-radius: 12px;
+}
+
+/* Filter Button */
+.filter-btn {
+  width: 50px;
+  height: 50px;
+  --border-radius: 12px;
+  margin: 0;
+}
+
+.filter-btn ion-icon {
+  font-size: 22px;
+}
+
+ion-content .container {
+  margin: 10px;
+}
+
+/* Category Card Styles - Add these */
+.category-card {
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--ion-color-light);
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-card p {
+  margin: 8px 0 0 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  color: var(--ion-color-danger);
+}
+
+.section-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 8px 0;
+}

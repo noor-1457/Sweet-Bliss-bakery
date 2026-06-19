@@ -1,0 +1,130 @@
+:root {
+  /* ========================================
+      IONIC COLORS
+  ======================================== */
+    
+  --ion-color-primary: #713600;
+  --ion-color-primary-rgb: 113, 54, 0;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-shade: #633000;
+  --ion-color-primary-tint: #81491a;
+
+  --ion-color-secondary: #a86a3d;
+  --ion-color-secondary-rgb: 168, 106, 61;
+  --ion-color-secondary-contrast: #ffffff;
+
+  --ion-color-success: #5b8c5a;
+  --ion-color-warning: #d89c3d;
+  --ion-color-danger: #c85a54;
+
+  /* ========================================
+      APP COLORS
+  ======================================== */
+
+  --ion-background-color: #fffaf6;
+  --ion-text-color: #3d220c;
+
+  --app-primary: #713600;
+  --app-primary-light: #a86a3d;
+  --app-primary-dark: #4d2500;
+
+  --app-accent: #d8a777;
+
+  --app-surface: #ffffff;
+  --app-card-bg: #ffffff;
+
+  --app-border: #f1dfd0;
+
+  --app-text-primary: #3d220c;
+  --app-text-secondary: #8b6b55;
+
+  /* ========================================
+      TYPOGRAPHY
+  ======================================== */
+
+  --app-font-family: "Poppins", sans-serif;
+
+  --font-size-h1: 32px;
+  --font-size-h2: 28px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+
+  --font-size-lg: 1.125rem;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ========================================
+      ICONS
+  ======================================== */
+
+  --icon-xs: 16px;
+  --icon-sm: 20px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 40px;
+  --icon-xxl: 48px;
+
+  /* ========================================
+      SPACING
+  ======================================== */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+
+  /* ========================================
+      BORDER RADIUS
+  ======================================== */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-xxl: 24px;
+
+  /* ========================================
+      SHADOWS
+  ======================================== */
+
+  --shadow-sm: 0 2px 8px rgba(113, 54, 0, 0.08);
+
+  --shadow-md: 0 4px 16px rgba(113, 54, 0, 0.12);
+
+  --shadow-lg: 0 8px 24px rgba(113, 54, 0, 0.18);
+
+  /* ========================================
+      COMPONENT SIZES
+  ======================================== */
+
+  --header-height: 60px;
+  --tabbar-height: 65px;
+
+  --button-height: 48px;
+  --input-height: 50px;
+
+  --product-image-height: 180px;
+
+  /* ========================================
+      GRADIENTS
+  ======================================== */
+
+  --gradient-primary: linear-gradient(135deg, #713600 0%, #a86a3d 100%);
+
+  --gradient-card: linear-gradient(180deg, #ffffff 0%, #fff6ef 100%);
+}
+
+/* ✅ Fixed: Proper CSS rule */
+banner {
+  margin: 0 10px;
+}

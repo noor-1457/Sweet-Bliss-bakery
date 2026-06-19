@@ -1,0 +1,14 @@
+<ion-row >
+  <div class="container">
+    <swiper-container [modules]="swiperModules" [slidesPerView]="4"> <!-- Fixed: slidesPerview -> slidesPerView -->
+      @for(category of categories(); track category.id){ <!-- Fixed: categories[] -> categories(), and track by id -->
+        <swiper-slide>
+          <ion-col>
+            <app-image-circle [image]="category.image"></app-image-circle> <!-- Fixed: removed ! and ? -->
+            <p class="small mt-5">{{category.name}}</p> <!-- Fixed: removed ? -->
+          </ion-col>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</ion-row>
