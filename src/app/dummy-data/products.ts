@@ -8,7 +8,7 @@ export const products: Product[] = [
     description: 
       'Our Chocolate Cake is a decadent masterpiece made with layers of moist chocolate sponge and creamy frosting. Perfectly sweet and rich, it’s a treat for chocolate enthusiasts and a centerpiece for celebrations. Enjoy the indulgence of premium cocoa in every bite.',
     rating: 4.5,
-    image: '/assets/cake.webp',
+    image: 'assets/cake.webp',
     category_id: 2,
     seller_id: 102,
     default_price: 25,

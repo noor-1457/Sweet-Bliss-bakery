@@ -20,7 +20,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 import { addIcons } from 'ionicons';
 import { heartOutline, shareSocialOutline, star, chatboxEllipses, call, bagHandle } from 'ionicons/icons';
-import { ImageRectBoxComponent } from 'src/app/components/image-rect-box/image-rect-box.component';
+// import { ImageRectBoxComponent } from 'src/app/components/image-rect-box/image-rect-box.component';
 // import { VegNonvegIndicatorComponent } from 'src/app/widgets/veg-nonveg-indicator/veg-nonveg-indicator.component';
 
 @Component({
@@ -39,7 +39,7 @@ import { ImageRectBoxComponent } from 'src/app/components/image-rect-box/image-r
     IonHeader,
     IonToolbar,
     NgClass,
-    ImageRectBoxComponent,
+    // ImageRectBoxComponent,
     // VegNonvegIndicatorComponent
   ],
 })
@@ -72,7 +72,7 @@ addToCart() {
     if (!id) {
       return;
     }
-
+    
     this.id = parseInt(id);
     const result: any = this.productService.getProductById(this.id);
     // support Observable, Promise or direct value

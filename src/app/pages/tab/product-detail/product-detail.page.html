@@ -24,13 +24,13 @@
   @let pdt = productDetails();
 
   <div [style.backgroundImage]="'url(' + pdt?.image + ')'" class="bg">
-    <ion-row class="bottom-center">
+    <!-- <ion-row class="bottom-center">
       @for(image of [1,2,3,4,5]; track $index) {
       <ion-col size="auto">
-        <app-image-rect-box [image]="'assets/cake.webp'"></app-image-rect-box>
+        <app-image-rect-box [image]="'url(' + pdt?.image + ')'"></app-image-rect-box>
       </ion-col>
       }
-    </ion-row>
+    </ion-row> -->
   </div>
 
   <ion-list lines="none" class="ion-margin">
